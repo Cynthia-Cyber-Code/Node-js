@@ -5,28 +5,6 @@ const {Sequelize, DataTypes} = require("sequelize");
 // 2. Implémenter la configuration postgreSQL
 const sequelize = new Sequelize("postgres://cynthia@127.0.0.1:5432/postgres")
 
-// 3. Vérifier la connexion
-
-// old version
-// console.log(1);
-// (async () => {
-//     try {
-//         await sequelize.authenticate();
-//         console.log("Connection has been established successfully.")
-//     } catch (error) {
-//         console.error("Unable to connect to the database", error)
-//     }
-// })();
-
-// new version
-try {
-    sequelize.authenticate().then(() => {
-        console.log('Connection has been established successfully.');
-    })
-} catch (error) {
-    console.error('Unable to connect to the database:', error);
-}
-
 // 3. Création d'un modèle
 const Reservation = sequelize.define('Reservation', {
     // Model attributes are defined here
@@ -112,8 +90,6 @@ module.exports = {
 // User.sync({ force: true }).then(() => {
 //     console.log("The table for the User model was just (re)created!")
 // })
-
-//Classe => REFERENCE
 
 // const r1 = Reservation.build({
 //     number_of_customers: 3,

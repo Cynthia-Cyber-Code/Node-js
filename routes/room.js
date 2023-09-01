@@ -3,19 +3,19 @@ const router = express.Router();
 
 const { Room } = require('../db.js');
 
-/* GET users */
+/* GET rooms */
 router.get('/rooms', (req, res, next) => {
     Room.findAll().then(rooms => {
         res.status(200).send(rooms);
     });
 });
-/* GET user */
+/* GET room */
 router.get('/rooms/:roomId', (req, res, next) => {
     Room.findOne({where : {id: req.params.roomId}}).then(rooms => {
         res.status(200).send(rooms);
     });
 });
-/*POST  user */
+/*POST  room */
 router.post('/room', (req, res, next) => {
 
     Room.create({

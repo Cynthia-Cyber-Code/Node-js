@@ -3,7 +3,7 @@ const router = express.Router();
 
 const { Spot } = require('../db.js');
 
-/* GET users */
+/* GET spots */
 router.get('/spots', (req, res, next) => {
     Room.findAll().then(rooms => {
         res.status(200).send(rooms);
@@ -15,7 +15,7 @@ router.get('/spots', (req, res, next) => {
 //         res.status(200).send(rooms);
 //     });
 // });
-/*POST  user */
+/*POST  spot */
 router.post('/spot', (req, res, next) => {
 
     Spot.create({
