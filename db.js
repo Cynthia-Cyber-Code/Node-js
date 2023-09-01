@@ -3,7 +3,9 @@ const {Sequelize, DataTypes} = require("sequelize");
 //const Sequelize = require("sequelize").Sequelize;
 
 // 2. Implémenter la configuration postgreSQL
-const sequelize = new Sequelize("postgres://cynthia@127.0.0.1:5432/postgres")
+// const sequelize = new Sequelize("postgres://cynthia@127.0.0.1:5432/postgres")
+const sequelize = new Sequelize("postgres://fogrsquk:Bw91aWhF93qjYxhBPvAVxEVir5owjA6I@trumpet.db.elephantsql.com/fogrsquk")
+
 
 // 3. Création d'un modèle
 const Reservation = sequelize.define('Reservation', {
@@ -67,9 +69,15 @@ const User = sequelize.define('User', {
     }
 });
 
+Reservation.sync({ force: true }).then(() => {
+    console.log("The table for the Reservation model was just (re)created!")
+})
+
 module.exports = {
     Reservation,
-    User
+    User,
+    Room,
+    Spot
 };
 
 // `sequelize.define` also returns the model
