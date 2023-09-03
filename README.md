@@ -19,7 +19,7 @@ You may also see any lint errors in the console.
 ## PostgreSQL also known as Postgres, is a free and open-source relational database management system.
 
   * Creation of the Database with dedicated tables and fields
-      * Use the framwork express
+      * Use the express framework
   
   * Implementation of CRUD(Create, read, update, delete) for the different routes of the database
     * Use [sequelize](https://sequelize.org/), Sequelize is a promise-based Node.js ORM tool for Postgres.
