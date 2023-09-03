@@ -20,16 +20,25 @@ You may also see any lint errors in the console.
 
   * Creation of the Database with dedicated tables and fields
       * Use the framwork express
+  
   * Implementation of CRUD(Create, read, update, delete) for the different routes of the database
-    * Use sequelize, Sequelize is a promise-based Node.js ORM tool for Postgres.
-    * Use sequelize CLI, This is lhe Sequelize Command Line Interface (CLI).
+    * Use [sequelize](https://sequelize.org/), Sequelize is a promise-based Node.js ORM tool for Postgres.
+    * Use [sequelize CLI](https://github.com/sequelize/cli), This is lhe Sequelize Command Line Interface (CLI).
        create following folders: 
          * config, contains config file, which tells CLI how to connect with database
          * models, contains all models for your project
          * migrations, contains all migration files
          * seeders, contains all seed files
+  
   * Creation of different db (db-development, db-production, db-test)
+  
+  * Add Athentification
+    * use [bycript framework](https://github.com/kelektiv/node.bcrypt.js) to encrypt the password.
+    * use [jsonwebtoken framework](https://github.com/auth0/node-jsonwebtoken) to return a token and to secure the database routes.
+       * [JWT](https://jwt.io/)
+  
   * Add test for the route GET: http://localhost:3000/api/reservations with Jest ans Supertest
-   * Jest, Testing Web Frameworks
-   * [Supertest](https://github.com/visionmedia/supertest)
+    * Jest, Testing Web Frameworks
+    * [Supertest](https://github.com/visionmedia/supertest)
+ 
   * Deployment with ElephantSQL
