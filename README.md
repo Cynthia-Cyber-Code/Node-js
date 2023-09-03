@@ -5,7 +5,7 @@ Projet Node.js Séquence2
 ## Getting Started with Express generator
 
 This project was bootstrapped with [Express generator](https://github.com/expressjs/generator).
-With ### npx express bookingApp-CynthiaF --no-view
+with `npx express bookingApp-CynthiaF --no-view`
 
 ### `npm run start`
 
@@ -19,7 +19,7 @@ You may also see any lint errors in the console.
 ## PostgreSQL also known as Postgres, is a free and open-source relational database management system.
 
   * Creation of the Database with dedicated tables and fields
-      *Use the framwork express
+      * Use the framwork express
   * Implementation of CRUD(Create, read, update, delete) for the different routes of the database
     * Use sequelize, Sequelize is a promise-based Node.js ORM tool for Postgres.
     * Use sequelize CLI, This is lhe Sequelize Command Line Interface (CLI).
