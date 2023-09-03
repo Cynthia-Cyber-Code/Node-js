@@ -2,9 +2,10 @@
 Projet Node.js Séquence2
 
 # Back-end
-## Getting Started with Create React App
+## Getting Started with Express generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Express generator](https://github.com/expressjs/generator).
+With ### npx express bookingApp-CynthiaF --no-view
 
 ### `npm run start`
 
@@ -20,10 +21,15 @@ You may also see any lint errors in the console.
   * Creation of the Database with dedicated tables and fields
       *Use the framwork express
   * Implementation of CRUD(Create, read, update, delete) for the different routes of the database
-    * Use sequelize
-    * Use sequelize CLI
+    * Use sequelize, Sequelize is a promise-based Node.js ORM tool for Postgres.
+    * Use sequelize CLI, This is lhe Sequelize Command Line Interface (CLI).
+       create following folders: 
+         * config, contains config file, which tells CLI how to connect with database
+         * models, contains all models for your project
+         * migrations, contains all migration files
+         * seeders, contains all seed files
   * Creation of different db (db-development, db-production, db-test)
   * Add test for the route GET: http://localhost:3000/api/reservations with Jest ans Supertest
-   * Jest
-   * Supertest
+   * Jest, Testing Web Frameworks
+   * [Supertest](https://github.com/visionmedia/supertest)
   * Deployment with ElephantSQL
